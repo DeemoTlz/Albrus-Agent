@@ -27,7 +27,7 @@ public class AttachThread extends Thread {
                     if (!beforeVM.contains(vmd)) {
                         // 如果 VM 有增加，我们就认为是被监控的 VM 启动了
                         // 这时，我们开始监控这个 VM
-                        System.out.println("正在入侵...");
+                        System.out.println("正在入侵...qqqqqq");
                         vm = VirtualMachine.attach(vmd);
                         break;
                     }
