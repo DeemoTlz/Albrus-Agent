@@ -28,7 +28,7 @@ public class XxxxServiceImplTF implements ClassFileTransformer {
 
     @Override
     public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer) {
-        if (!className.equals("com/deemo/tlz/XxxxServiceImpl")) {
+        if (!className.equals("com/deemo/service/XxxxServiceImpl")) {
             return null;
         }
 

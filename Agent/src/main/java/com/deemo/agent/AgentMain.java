@@ -11,9 +11,9 @@ public class AgentMain {
         System.out.println("AgentMain.agentmain...");
         System.out.println("Args: " + args);
 
-        Class[] classes = ins.getAllLoadedClasses();
-        for (Class aClass : classes) {
-            if ("com.deemo.tlz.XxxxServiceImpl".equals(aClass.getName())) {
+        Class<?>[] classes = ins.getAllLoadedClasses();
+        for (Class<?> aClass : classes) {
+            if ("com.deemo.service.XxxxServiceImpl".equals(aClass.getName())) {
                 System.out.println(aClass.getName());
                 ins.addTransformer(new XxxxServiceImplTF(), true);
                 ins.retransformClasses(aClass);

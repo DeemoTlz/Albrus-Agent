@@ -11,8 +11,8 @@ public class AgentMain2 {
         System.out.println("AgentMain2.agentmain...");
         System.out.println("Args: " + args);
 
-        Class[] classes = ins.getAllLoadedClasses();
-        for (Class aClass : classes) {
+        Class<?>[] classes = ins.getAllLoadedClasses();
+        for (Class<?> aClass : classes) {
             if ("com.deemo.service.XxxxServiceImpl".equals(aClass.getName())) {
             // if ("com.deemo.service.ZzzzServiceImpl".equals(aClass.getName())) {
                 System.out.println("Finded..");
